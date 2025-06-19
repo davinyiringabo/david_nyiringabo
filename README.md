@@ -19,8 +19,8 @@ This project demonstrates a simple Express.js application containerized with Doc
 
 2. Clone this repository:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/davinyiringabo/david_nyiringabo.git david_nyiringabo_work
+cd david_nyiringabo_work
 ```
 
 3. Install dependencies:
@@ -30,7 +30,7 @@ npm install
 
 4. Build and run the containers:
 ```bash
-docker-compose up --build
+docker-compose up -d --build
 ```
 
 ## Accessing the Application
@@ -48,6 +48,6 @@ Below is a screenshot showing the application running successfully through the N
 ## Technical Details
 
 - Express.js application runs on port 3000 inside the container
-- Docker maps the Express.js container to port 3001 on the host
+- Docker maps the Express.js container to port 3000 on the host
 - NGINX listens on port 80 and forwards requests to the Express.js application
 - Docker Compose manages both containers and their networking 
